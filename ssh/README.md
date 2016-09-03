@@ -2,6 +2,12 @@
 
 Debian 8 发行版 openssh-server & openssh-sftp-server 设置
 
+配置文件位置:
+
+```
+/etc/ssh/sshd_config
+```
+
 主要配置:
 
 ```
