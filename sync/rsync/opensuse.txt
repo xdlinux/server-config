@@ -1,0 +1,7 @@
++ distribution
++ distribution/openSUSE-*
++ distribution/leap/***
++ update
++ update/openSUSE-*
++ update/leap/***
+- *

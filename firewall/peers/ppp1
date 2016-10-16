@@ -1,0 +1,22 @@
+# written by pptpsetup
+pty "pptp 202.117.120.241 --nolaunchpppd"
+file /etc/ppp/options.pptp
+lock
+noauth
+nobsdcomp
+nodeflate
+refuse-pap
+refuse-eap
+refuse-chap
+refuse-mschap
+
+nodefaultroute
+noipv6
+
+name -----
+remotename ppp1
+ipparam ppp1
+
+#debug
+#nodetach
+#logfd 2

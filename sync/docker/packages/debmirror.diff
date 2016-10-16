@@ -1,0 +1,18 @@
+@@ -2262,7 +2262,7 @@ sub get_index {
+   }
+ 
+   my $got_any_file=0;
+-  if (exists $file_lists{"$tempdir/$subdir/$file.xz"}{size}) {
++  if (exists $file_lists{"$tempdir/$subdir/$file.xz"}) {
+     my $got_xz=0;
+     if (!check_lists("$tempdir/$subdir/$file.xz")) {
+       if (remote_get("$subdir/$file.xz")) {
+@@ -2287,7 +2287,7 @@ sub get_index {
+       $got_any_file=1;
+     }
+   }
+-  if (exists $file_lists{"$tempdir/$subdir/$file.gz"}{size}) {
++  if (exists $file_lists{"$tempdir/$subdir/$file.gz"}) {
+     my $got_gz=0;
+     if (!check_lists("$tempdir/$subdir/$file.gz")) {
+       if (remote_get("$subdir/$file.gz")) {
