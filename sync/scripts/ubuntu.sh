@@ -25,13 +25,16 @@ section=main,restricted,universe,multiverse
 # List of updated releases in: https://wiki.ubuntu.com/Releases
 #
 
-release=trusty,trusty-updates,trusty-proposed,trusty-backports,xenial,xenial-updates,xenial-proposed,xenial-backports
+release=trusty,trusty-updates,trusty-proposed,trusty-backports,trusty-security,xenial,xenial-updates,xenial-proposed,xenial-backports,xenial-security,precise,precise-updates,precise-proposed,precise-backports,precise-security
 
 # Server=       -h      # Server name, minus the protocol and the path at the end
 # CHANGE "*" to equal the mirror you want to create your mirror from. au. in Australia  ca. in Canada.
 # This can be found in your own /etc/apt/sources.list file, assuming you have Ubuntu installed.
 #
 server=mirrors6.tuna.tsinghua.edu.cn
+#server=mirrors6.ustc.edu.cn
+#server=[2001:da8:205::58]
+#server=[2001:67c:1360:8001::21]
 
 # Dir=          -r      # Path from the main server, so http://my.web.server/, Server dependant
 #
@@ -40,7 +43,7 @@ inPath=/ubuntu
 # Proto=        --method=       # Protocol to use for transfer (http, ftp, hftp, rsync)
 # Choose one - http is most usual the service, and the service must be avaialbe on the server you point at.
 #
-proto=rsync
+proto=http
 
 # Outpath=              # Directory to store the mirror in
 # Make this a full path to where you want to mirror the material.
@@ -62,11 +65,13 @@ debmirror       -a $arch \
                 --progress \
                 --method=$proto \
                 $outPath \
-                --i18n \
-                --check-gpg \
                 --postcleanup \
                 --diff=mirror \
                 --allow-dist-rename \
-                --ignore-small-errors
+                --ignore-small-errors \
+                --include='/Translation-.*' \
+                --include='/Index$'
 
+#                --i18n \
+#               --check-gpg \
 #### End script to automate building of Ubuntu mirror ####

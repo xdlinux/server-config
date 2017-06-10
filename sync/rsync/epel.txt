@@ -1,0 +1,10 @@
+7*
+7*/***
+testing
+testing/***
+RPM-GPG-KEY-EPEL
+RPM-GPG-KEY-EPEL-7
+RPM-GPG-KEY-EPEL-7Server
+epel-release-latest-7.noarch.rpm
+fullfilelist
+fullfiletimelist-epel

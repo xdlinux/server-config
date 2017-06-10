@@ -1,4 +1,8 @@
 + current-live
 + current-live/amd64
++ current-live/amd64/iso-hybrid
 + current-live/amd64/iso-hybrid/***
++ current-live/i386
++ current-live/i386/iso-hybrid
++ current-live/i386/iso-hybrid/***
 - *

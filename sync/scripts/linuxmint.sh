@@ -1,21 +1,20 @@
 #!/bin/bash
 
-export GNUPGHOME=/home/keyrings/deb-multimedia
+export GNUPGHOME=/home/keyrings/linuxmint
 
 arch=i386,amd64
 
-section=main,non-free
+section=main,universe,multiverse,upstream,romeo,import,backport
 
-release=jessie,jessie-backports,stretch
+release=sarah
 
-server=mirrors6.tuna.tsinghua.edu.cn
-#server=mirrors6.ustc.edu.cn
+server=mirrors.xdlinux.info
 
-inPath=/debian-multimedia
+inPath=/linuxmint
 
 proto=http
 
-outPath=/srv/mirrors/debian-multimedia
+outPath=/srv/mirrors/linuxmint
 
 debmirror       -a $arch \
                 --source \
@@ -30,6 +29,4 @@ debmirror       -a $arch \
                 --check-gpg \
                 --postcleanup \
                 --diff=mirror \
-                --allow-dist-rename \
-                --include='/Translation-.*\.bz2$' \
-                --exclude='/Translation-.*$'
+                --allow-dist-rename

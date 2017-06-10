@@ -7,12 +7,14 @@ arch=i386,amd64
 section=main,contrib,non-free
 
 release=sana,sana-proposed-updates
+release=kali-rolling,kali-rolling-only
 
 server=mirrors6.tuna.tsinghua.edu.cn
+#server=[2001:da8:d800:95::110]
 
 inPath=/kali
 
-proto=rsync
+proto=http
 
 outPath=/srv/mirrors/kali
 

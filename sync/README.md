@@ -2,9 +2,11 @@
 
 使用[mirror](https://github.com/ideal/mirror/)执行计划任务。
 
-同步工具为`debmirror / rsync`。
+同步工具为`rsync`。
 
-注: `debmirror[Package: debmirror Version: 1:2.25ubuntu2]`，此版本 Bug 见[Debian Bug report logs - #824590](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=824590)，补丁:`./packages/debmirror.diff`。
+`debmirror` 已弃用。
+
+~~注: `debmirror[Package: debmirror Version: 1:2.25ubuntu2]`，此版本 Bug 见[Debian Bug report logs - #824590](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=824590)，补丁:`./packages/debmirror.diff`。~~
 
 ```bash
 $ tree sync
@@ -28,15 +30,30 @@ $ tree sync
 │   ├── archlinuxcn.txt
 │   ├── centos.txt
 │   ├── debian-cd.txt
+│   ├── debian-multimedia.txt
+│   ├── debian-security.txt
+│   ├── debian.txt
 │   ├── deepin-cd.txt
+│   ├── deepin.txt
+│   ├── epel.txt
+│   ├── fedora.txt
 │   ├── kali-images.txt
+│   ├── kali.txt
+│   ├── linuxmint.txt
 │   ├── opensuse.txt
 │   ├── openwrt.txt
-│   └── ubuntu-releases.txt
-└── scripts # debmirror 脚本
-    ├── debian.sh
-    ├── deb-multimedia.sh
-    ├── deepin.sh
-    ├── kali.sh
-    └── ubuntu.sh
+│   ├── ubuntu-releases.txt
+│   ├── ubuntu.txt
+│   └── virtualbox.txt
+└── scripts # 其他同步脚本
+    ├── android.py
+    ├── aosp.sh
+    ├── debian.sh          # 未使用
+    ├── deb-multimedia.sh  # 未使用
+    ├── deepin.sh          # 未使用
+    ├── homebrew.sh
+    ├── kali.sh            # 未使用
+    ├── linuxmint.sh       # 未使用
+    ├── repo
+    └── ubuntu.sh          # 未使用
 ```
