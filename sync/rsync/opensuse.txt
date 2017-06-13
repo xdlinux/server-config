@@ -1,7 +1,15 @@
 + distribution
++ distribution/13.2
++ distribution/13.2/***
 + distribution/openSUSE-*
++ distribution/openSUSE-*/***
++ distribution/leap
 + distribution/leap/***
 + update
++ update/13.2*
++ update/13.2*/***
 + update/openSUSE-*
++ update/openSUSE-*/***
++ update/leap
 + update/leap/***
 - *

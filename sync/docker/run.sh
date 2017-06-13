@@ -10,4 +10,4 @@ docker run -d \
     -v /home/docker/mirror/status:/srv/status:rw \
     -v /var/log/mirrord:/var/log/mirrord \
     --name mirror \
-    xdlinux/mirror        
+    xdlinux/mirror

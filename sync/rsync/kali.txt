@@ -1,0 +1,26 @@
++ pool
++ pool/*
++ pool/*/*
++ pool/*/*/*
++ pool/*/*/*/*_all.deb
++ pool/*/*/*/*_i386.deb
++ pool/*/*/*/*_amd64.deb
+- pool/*/*/*/*.deb
+- pool/*/*/*/*.udeb
++ pool/*/*/*/*
+
++ dists
++ dists/*
+- dists/*/Contents-arm*
++ dists/*/*
+- dists/*/*/installer*
++ dists/*/*/*amd64*
++ dists/*/*/*amd64*/***
++ dists/*/*/*i386*
++ dists/*/*/*i386*/***
++ dists/*/*/*source*
++ dists/*/*/*source*/***
++ dists/*/*/i18n
++ dists/*/*/i18n/***
+
+- *

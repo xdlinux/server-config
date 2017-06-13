@@ -1,0 +1,17 @@
++ releases
++ releases/25
++ releases/25/*
++ releases/25/*/x86_64
++ releases/25/*/x86_64/***
++ releases/25/*/i386
++ releases/25/*/i386/***
++ updates
++ updates/25
++ updates/25/x86_64
++ updates/25/x86_64/***
++ updates/25/i386
++ updates/25/i386/***
++ updates/26
++ updates/26/x86_64
++ updates/26/x86_64/***
+- *

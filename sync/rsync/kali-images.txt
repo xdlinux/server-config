@@ -1,2 +1,5 @@
-+ current/***
++ kali-weekly
++ kali-weekly/SHA*
++ kali-weekly/kali-linux-2*.iso
++ kali-weekly/kali-linux-light-2*.iso
 - *

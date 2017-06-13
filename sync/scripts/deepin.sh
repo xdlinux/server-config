@@ -12,7 +12,7 @@ server=mirrors6.tuna.tsinghua.edu.cn
 
 inPath=/deepin
 
-proto=rsync
+proto=http
 
 outPath=/srv/mirrors/deepin
 

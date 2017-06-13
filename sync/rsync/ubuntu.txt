@@ -1,0 +1,3 @@
+- dists/*/*/debian-installer
+- pool/*/*/*/*.udeb
++ ***
