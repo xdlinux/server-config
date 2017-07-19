@@ -5,7 +5,6 @@
 + pool/*/*/*/*_all.deb
 + pool/*/*/*/*_i386.deb
 + pool/*/*/*/*_amd64.deb
-+ pool/*/*/*/*_armhf.deb
 - pool/*/*/*/*.deb
 - pool/*/*/*/*.udeb
 + pool/*/*/*/*
@@ -19,18 +18,10 @@
 + dists
 + dists/*
 + dists/*/*
-- dists/*/*/installer*
 + dists/*/*/*amd64*
 + dists/*/*/*amd64*/***
 + dists/*/*/*i386*
 + dists/*/*/*i386*/***
-+ dists/*/*/dep11
-+ dists/*/*/dep11/*i386*
-+ dists/*/*/dep11/*amd64*
-+ dists/*/*/dep11/*armhf*
-+ dists/*/*/dep11/icons*
-+ dists/*/*/dep11/by-hash
-+ dists/*/*/dep11/by-hash/***
 + dists/*/*/*source*
 + dists/*/*/*source*/***
 + dists/*/*/i18n

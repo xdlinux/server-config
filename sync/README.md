@@ -29,10 +29,12 @@ $ tree sync
 ├── rsync # rsync --include-file 参数引用文件
 │   ├── archlinuxcn.txt
 │   ├── centos.txt
+│   ├── debian-cd-nonfree.txt
 │   ├── debian-cd.txt
 │   ├── debian-multimedia.txt
 │   ├── debian-security.txt
 │   ├── debian.txt
+│   ├── deb-multimedia.txt
 │   ├── deepin-cd.txt
 │   ├── deepin.txt
 │   ├── epel.txt
@@ -46,14 +48,14 @@ $ tree sync
 │   ├── ubuntu.txt
 │   └── virtualbox.txt
 └── scripts # 其他同步脚本
-    ├── android.py
-    ├── aosp.sh
-    ├── debian.sh          # 未使用
-    ├── deb-multimedia.sh  # 未使用
-    ├── deepin.sh          # 未使用
-    ├── homebrew.sh
-    ├── kali.sh            # 未使用
-    ├── linuxmint.sh       # 未使用
-    ├── repo
-    └── ubuntu.sh          # 未使用
+    ├── android.py
+    ├── aosp.sh
+    ├── debian.sh          # 未使用
+    ├── deb-multimedia.sh  # 未使用
+    ├── deepin.sh          # 未使用
+    ├── homebrew.sh
+    ├── kali.sh            # 未使用
+    ├── linuxmint.sh       # 未使用
+    ├── repo
+    └── ubuntu.sh          # 未使用
 ```

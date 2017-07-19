@@ -5,6 +5,10 @@
 + releases/25/*/x86_64/***
 + releases/25/*/i386
 + releases/25/*/i386/***
++ releases/26
++ releases/26/*
++ releases/26/*/x86_64
++ releases/26/*/x86_64/***
 + updates
 + updates/25
 + updates/25/x86_64
